@@ -4,8 +4,9 @@
 
 # Site
 title: Coco ’s blog
-subtitle: 经不住流年似水，逃不过此间少年
-description: 前端个人博客,Javascript,html5,csss3,web前端开发
+subtitle: 少年不知愁滋味 为赋新词强说愁
+description: Coco的个人博客，记录个人学习成长，热爱前端，喜欢设计，爱好折腾。
+keywords: Javascript,html5,csss3,web前端开发
 author: Coco
 language: zh-CN
 timezone:
@@ -71,3 +72,15 @@ deploy:
   type: github                                                  # 博客托管服务器类型
   repository: https://github.com/chokcoco/chokcoco.github.io  # 托管服务器地址
   brach: master
+# sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+ # Rss
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub: 

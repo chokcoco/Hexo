@@ -3,25 +3,17 @@ var post = page;
 %>
 
 <article class="post-container post-container--single">
-
   <header class="post-header">
-    
     <h1 class="post-title"><%= post.title %></h1>
-
     <section id="post-content" class="article-content post">
         <%- post.content %>
     </section>
-
-
   </header>
-
 </article>
 
 <div class="archive-meta">
-
 <% if (site.categories.length){ %>
     <h3><%= __('categories') %></h3>
-
     <div class="categorieslist">
         <% site.categories.sort('name').each(function(item){ %>
           <% if(item.posts.length){ %>

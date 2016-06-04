@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
     <%
     var title = page.title || '';
 
@@ -32,17 +31,19 @@
       title = title + ' | ' + config.title;
     }
     %>
-
     <title>
       <%= title %> 
     </title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <% if (config.author){ %>
       <meta name="author" content="<%= config.author %>">
     <% } %>
     <% if ( is_home() && config.description){ %>
       <meta name="description" content="<%= config.description %>">
+    <% } %>
+
+    <% if ( is_home() && config.keywords){ %>
+      <meta name="keywords" content="<%= config.keywords %>">
     <% } %>
 
     <%- open_graph({title: title}) %>
@@ -57,35 +58,27 @@
     <%- css('css/highlight') %>
     <%- css('css/archive.css') %>
     <%- css('css/china-social-icon.css') %>
-
 </head>
 <body>
-
     <span class="mobile btn-mobile-menu">
         <i class="icon icon-list btn-mobile-menu__icon"></i>
         <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
     </span>
-
     <%- partial('_partials/side-panel') %>
-
     <div class="content-wrapper">
         <div class="content-wrapper__inner entry">
             <%- body %>
             <%- partial('_partials/footer') %>
         </div>
     </div>
-
     <!-- js files -->
     <script src="<%- config.root %>js/jquery.min.js"></script>
     <script src="<%- config.root %>js/main.js"></script>
     <script src="<%- config.root %>js/scale.fix.js"></script>
-    
-
     <%- partial('_scripts/mathjax') %>
     <%- partial('_scripts/awesome-toc') %>
     <%- partial('_scripts/site-analytics') %>
     <%- partial('_scripts/github-repo-widget') %>
     <%- partial('_scripts/killie6') %>
-
 </body>
 </html>
