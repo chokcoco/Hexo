@@ -21,3 +21,6 @@ duoshuo_shortname: sbco
 
 # Enable githubRepoWidget
 github_repo_widget: false
+
+## Analytics
+cnzz_tongji: true

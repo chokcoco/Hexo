@@ -69,9 +69,12 @@ theme: huno-master
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: github                                                  # 博客托管服务器类型
-  repository: https://github.com/chokcoco/chokcoco.github.io  # 托管服务器地址
+  type: git                                                  # 博客托管服务器类型
+  repository: git@github.com:chokcoco/chokcoco.github.io.git  # 托管服务器地址
   brach: master
+  # type: git
+  # repository: git@github.com:chokcoco/Hexo.git  # 托管服务器地址
+  # brach: master
 # sitemap
 sitemap:
   path: sitemap.xml
