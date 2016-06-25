@@ -1,7 +1,7 @@
 # Header
 menu:
   首页: /#blog
-  关于: /about
+  关于: /about/html/
   归档: /archive
 
 # Site favicon
@@ -24,3 +24,6 @@ github_repo_widget: false
 
 ## Analytics
 cnzz_tongji: true
+
+## logo
+logo: /images/logo.png

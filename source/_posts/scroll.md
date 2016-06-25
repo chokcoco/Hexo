@@ -14,7 +14,6 @@ tags: [性能优化, javascript, 编码技巧]
 
 滚动优化其实也不仅仅指滚动（scroll 事件），还包括了例如 resize 这类会频繁触发的事件。简单的看看：
 ```javascript
-
 var i = 0;
 window.addEventListener('scroll',function(){
 	console.log(i++);
